@@ -13,7 +13,8 @@
   "packageManager": "pnpm@11.21.0",
   "scripts": {
     "dev": "dotenv next dev --turbo",
-    "build": "npm-run-all check-env build-db check-db build-tracker build-recorder build-geo build-app",
+    "build": "node scripts/hostinger-build.js",
+    "build:upstream": "npm-run-all check-env build-db check-db build-tracker build-recorder build-geo build-app",
     "start": "next start",
     "build-docker": "npm-run-all build-db build-tracker build-recorder build-geo build-app",
     "start-docker": "npm-run-all check-db update-tracker start-server",
