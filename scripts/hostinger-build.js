@@ -33,4 +33,3 @@ run(npx, ['tsc', '-p', 'tsconfig.tracker.types.json']);
 run(npm, ['run', 'build-recorder']);
 run(npm, ['run', 'build-geo']);
 run(npm, ['run', 'build-app']);
-run(npm, ['run', 'postbuild']);
